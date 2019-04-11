@@ -1,0 +1,12 @@
+	//===== Start Navbar Scrolling ======//
+		 
+		 $(window).on('scroll',function(event) {    
+			var scroll = $(window).scrollTop();
+			if (scroll < 300) {
+				$(".header-menu").removeClass("fixed");
+				
+			}else{
+			  $(".header-menu").addClass("fixed");
+			  
+		  }
+		});
